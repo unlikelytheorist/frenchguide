@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fiche de révision A2+</title>
+<style>
+/* Layout: online-form look — colored banner, centered column of white section cards, numbered like form questions */
+:root{
+  --bg:#F3F2F1; --card:#FFFFFF; --fg:#252423; --muted:#605E5C; --line:#E1DFDD;
+  --accent:#03787C; --accent-soft:#E6F3F3; --banner1:#03787C; --banner2:#0B5A6B;
+  --warn:#A4262C; --warn-soft:#FDF3F4;
+  --f-body:"Segoe UI","Segoe UI Web (West European)",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+}
+:root,:root[data-theme="dark"]{color-scheme:light}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.55}
+.banner{height:150px;margin-top:calc(-1 * env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px);
+  background:linear-gradient(135deg,var(--banner1),var(--banner2));position:relative;overflow:hidden}
+.banner::after{content:"";position:absolute;right:-60px;top:-80px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.08)}
+.banner::before{content:"";position:absolute;right:140px;bottom:-120px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.06)}
+.wrap{max-width:780px;margin:-70px auto 0;position:relative;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 60px;display:grid;gap:14px}
+.card{background:var(--card);border-radius:4px;box-shadow:0 1.6px 3.6px rgba(0,0,0,.13),0 .3px .9px rgba(0,0,0,.11);padding:24px 28px;min-width:0}
+.head{border-top:8px solid var(--accent);padding-top:22px}
+h1{font-size:28px;font-weight:600;margin:0 0 8px;text-wrap:balance}
+.head p{margin:0;color:var(--muted)}
+.meta{margin-top:16px;border-top:1px solid var(--line);padding-top:14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.meta div{display:grid;gap:2px}
+.meta span{font-size:12px;color:var(--muted)}
+.meta b{font-weight:600}
+.sec{background:var(--accent);color:#fff;border-radius:4px;padding:14px 28px}
+.sec h2{margin:0;font-size:18px;font-weight:600}
+.sec p{margin:2px 0 0;font-size:13px;opacity:.9}
+.q h3{font-size:16px;font-weight:600;margin:0 0 12px;display:flex;gap:8px;text-wrap:balance}
+.q h3 .n{color:var(--muted);font-weight:400}
+.q ul{margin:0;padding-left:20px;display:grid;gap:5px}
+.q p{margin:0}
+.q p+p,.q p+ul,.q ul+p{margin-top:8px}
+.tbl{overflow-x:auto;margin-top:4px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border-bottom:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:var(--accent-soft);font-weight:600;font-size:13px}
+.ex{color:var(--accent);font-style:italic}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:6px 0}
+.opt::before{content:"";flex:none;width:16px;height:16px;margin-top:3px;border:1.5px solid var(--muted);border-radius:50%;box-sizing:border-box}
+.opt.on::before{border:5px solid var(--accent)}
+.note{background:var(--warn-soft);border-left:3px solid var(--warn);padding:10px 14px;border-radius:2px;font-size:14px;margin-top:12px}
+.note b{color:var(--warn)}
+mark{background:var(--accent-soft);color:var(--accent);padding:0 4px;border-radius:2px;font-weight:600}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.two>div{min-width:0}
+.two h4{margin:0 0 6px;font-size:14px;font-weight:600}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14px}
+dt{font-weight:600} dd{margin:0;color:var(--muted)}
+.model{white-space:pre-line;border:1px solid var(--line);border-radius:4px;padding:14px 16px;background:var(--bg)}
+.foot{text-align:center;font-size:12px;color:var(--muted);margin-top:6px}
+@media (max-width:520px){.card{padding:20px 18px}.sec{padding:12px 18px}h1{font-size:23px}dl{grid-template-columns:1fr}dd{margin-bottom:4px}}
+</style>
+<style>body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+
+<div class="banner" aria-hidden="true"></div>
+<div class="wrap">
+
+<div class="card head">
+  <h1>Fiche de révision · Examen écrit A2+</h1>
+  <p>Everything from courses 1 to 18 that the written exam tests, on one page.</p>
+  <div class="meta">
+    <div><span>Date</span><b>26/11 · 08:30</b></div>
+    <div><span>Salle</span><b>572-R-013</b></div>
+    <div><span>Durée</span><b>1 h 30</b></div>
+    <div><span>Pour réussir</span><b>60 / 100</b></div>
+  </div>
+</div>
+
+<div class="card q">
+  <h3><span class="n">1.</span> Structure de l'examen écrit</h3>
+  <div class="opt on">Compréhension orale : 3 audios avec questions (au début, ne pas arriver en retard)</div>
+  <div class="opt on">Grammaire, conjugaison et vocabulaire : quiz</div>
+  <div class="opt on">Compréhension écrite : 2 textes courts avec questions</div>
+  <div class="opt on">Production écrite : 80 à 100 mots</div>
+  <p class="note"><b>Important :</b> les retardataires ne peuvent pas passer l'épreuve.</p>
+</div>
+
+<div class="sec"><h2>Section 1 · Les temps</h2><p>Passé composé, imparfait, futur, conditionnel</p></div>
+
+<div class="card q">
+  <h3><span class="n">2.</span> Passé composé ou imparfait ?</h3>
+  <div class="tbl"><table>
+    <tr><th>Passé composé</th><th>Imparfait</th></tr>
+    <tr><td>action finie, un événement</td><td>description, décor, météo, sentiments</td></tr>
+    <tr><td>hier, soudain, tout à coup, une fois</td><td>tous les jours, avant, quand j'étais petit</td></tr>
+    <tr><td>actions qui se suivent</td><td>action en cours (pendant que…)</td></tr>
+  </table></div>
+  <p class="ex">Il pleuvait quand je suis arrivé. · Pendant que je mangeais, le téléphone a sonné.</p>
+</div>
+
+<div class="card q">
+  <h3><span class="n">3.</span> Avoir ou être ? L'accord du participe passé</h3>
+  <ul>
+    <li><b>Être</b> : aller, venir, arriver, partir, entrer, sortir, monter, descendre, naître, mourir, rester, tomber, rentrer, retourner, devenir, revenir + <b>tous les verbes pronominaux</b>.</li>
+    <li>Avec <b>être</b>, accord avec le sujet : <span class="ex">elle est partie · ils sont rentrés</span></li>
+    <li>Avec <b>avoir</b>, accord seulement si le COD est <b>avant</b> le verbe : <span class="ex">Marie ? Je l'ai vue. · Les clés ? Je les ai prises.</span></li>
+    <li>Négation autour de l'auxiliaire : <span class="ex">je n'ai pas compris · elle n'est pas venue</span></li>
+  </ul>
+</div>
+
+<div class="card q">
+  <h3><span class="n">4.</span> Participes passés irréguliers</h3>
+  <div class="tbl"><table>
+    <tr><td>avoir → eu</td><td>être → été</td><td>faire → fait</td><td>prendre → pris</td></tr>
+    <tr><td>mettre → mis</td><td>dire → dit</td><td>écrire → écrit</td><td>voir → vu</td></tr>
+    <tr><td>venir → venu</td><td>pouvoir → pu</td><td>devoir → dû</td><td>vouloir → voulu</td></tr>
+    <tr><td>savoir → su</td><td>lire → lu</td><td>boire → bu</td><td>recevoir → reçu</td></tr>
+    <tr><td>connaître → connu</td><td>ouvrir → ouvert</td><td>offrir → offert</td><td>naître → né</td></tr>
+    <tr><td>mourir → mort</td><td>vivre → vécu</td><td>attendre → attendu</td><td>éteindre → éteint</td></tr>
+  </table></div>
+</div>
+
+<div class="card q">
+  <h3><span class="n">5.</span> Futur simple et conditionnel présent</h3>
+  <div class="two">
+    <div>
+      <h4>Futur simple</h4>
+      <p>infinitif + <mark>-ai -as -a -ons -ez -ont</mark></p>
+      <p>Irréguliers : serai, aurai, irai, ferai, verrai, viendrai, pourrai, devrai, voudrai, saurai, enverrai, recevrai · il faudra, il pleuvra</p>
+      <p>Futur proche : aller + inf. · Passé récent : venir de + inf. · En cours : être en train de + inf.</p>
+    </div>
+    <div>
+      <h4>Conditionnel</h4>
+      <p>radical du futur + <mark>-ais -ais -ait -ions -iez -aient</mark></p>
+      <ul>
+        <li>politesse : <span class="ex">je voudrais, pourriez-vous…</span></li>
+        <li>conseil : <span class="ex">tu devrais, il faudrait</span></li>
+        <li>hypothèse : <b>Si + imparfait → conditionnel</b> <span class="ex">Si j'étais riche, je voyagerais.</span></li>
+      </ul>
+    </div>
+  </div>
+  <p class="note"><b>Piège :</b> je voudrai (futur) ≠ je voudrais (conditionnel). Jamais de conditionnel après <i>si</i> : si j'avais, pas « si j'aurais ».</p>
+</div>
+
+<div class="sec"><h2>Section 2 · Les pronoms</h2><p>Relatifs, COD / COI, y / en, possessifs</p></div>
+
+<div class="card q">
+  <h3><span class="n">6.</span> Pronoms relatifs</h3>
+  <div class="tbl"><table>
+    <tr><th>Pronom</th><th>Remplace</th><th>Test rapide</th><th>Exemple</th></tr>
+    <tr><td><b>qui</b></td><td>le sujet</td><td>suivi d'un verbe</td><td class="ex">la collègue qui travaille avec moi</td></tr>
+    <tr><td><b>que</b></td><td>le COD</td><td>suivi d'un sujet</td><td class="ex">le livre que je lis</td></tr>
+    <tr><td><b>où</b></td><td>lieu ou moment</td><td>« ce lieu », « ce jour-là »</td><td class="ex">la ville où je suis né · le jour où il est parti</td></tr>
+    <tr><td><b>dont</b></td><td>de + quelque chose</td><td>parler de, avoir besoin de</td><td class="ex">le projet dont je t'ai parlé</td></tr>
+  </table></div>
+</div>
+
+<div class="card q">
+  <h3><span class="n">7.</span> COD, COI, y et en</h3>
+  <div class="two">
+    <div>
+      <h4>COD / COI</h4>
+      <p>COD : me, te, le / la / l', nous, vous, les</p>
+      <p>COI (à + personne) : me, te, <b>lui</b>, nous, vous, <b>leur</b></p>
+      <p class="ex">J'appelle Marie → je l'appelle. Je parle à Marie → je lui parle.</p>
+    </div>
+    <div>
+      <h4>Y / EN</h4>
+      <ul>
+        <li><b>y</b> = à + chose / lieu : <span class="ex">J'y vais.</span></li>
+        <li><b>en</b> = de / du / des / quantité : <span class="ex">J'en bois. J'en ai une.</span></li>
+        <li>Place : avant le verbe ou l'auxiliaire : <span class="ex">je n'en ai pas bu · je vais en manger</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="card q">
+  <h3><span class="n">8.</span> Pronoms possessifs</h3>
+  <div class="tbl"><table>
+    <tr><th></th><th>masc. sing.</th><th>fém. sing.</th><th>masc. plur.</th><th>fém. plur.</th></tr>
+    <tr><td>moi</td><td>le mien</td><td>la mienne</td><td>les miens</td><td>les miennes</td></tr>
+    <tr><td>toi</td><td>le tien</td><td>la tienne</td><td>les tiens</td><td>les tiennes</td></tr>
+    <tr><td>lui / elle</td><td>le sien</td><td>la sienne</td><td>les siens</td><td>les siennes</td></tr>
+    <tr><td>nous / vous</td><td>le nôtre / vôtre</td><td>la nôtre / vôtre</td><td colspan="2">les nôtres / vôtres</td></tr>
+    <tr><td>eux / elles</td><td>le leur</td><td>la leur</td><td colspan="2">les leurs</td></tr>
+  </table></div>
+  <p class="note"><b>Piège :</b> l'accord se fait avec l'objet possédé : <i>Ma voiture est rouge, et la vôtre ?</i></p>
+</div>
+
+<div class="sec"><h2>Section 3 · Comparer, nier, relier</h2><p>Comparatif, superlatif, négation, connecteurs</p></div>
+
+<div class="card q">
+  <h3><span class="n">9.</span> Comparatif et superlatif</h3>
+  <div class="tbl"><table>
+    <tr><th></th><th>adjectif</th><th>nom</th><th>verbe</th></tr>
+    <tr><td>+</td><td>plus … que</td><td>plus de … que</td><td>verbe + plus que</td></tr>
+    <tr><td>=</td><td>aussi … que</td><td>autant de … que</td><td>verbe + autant que</td></tr>
+    <tr><td>−</td><td>moins … que</td><td>moins de … que</td><td>verbe + moins que</td></tr>
+  </table></div>
+  <ul style="margin-top:10px">
+    <li>bon → <b>meilleur</b> (adjectif) · bien → <b>mieux</b> (adverbe) · mauvais → <b>pire</b></li>
+    <li>Superlatif : <b>le / la / les plus</b> + adjectif + <b>de</b> : <span class="ex">la plus grande ville de France</span></li>
+    <li><span class="ex">C'est Paul qui travaille le plus. · C'est l'heure où il y a le plus de voitures.</span></li>
+  </ul>
+</div>
+
+<div class="card q">
+  <h3><span class="n">10.</span> Négation et connecteurs</h3>
+  <div class="two">
+    <div>
+      <h4>Contraires</h4>
+      <dl>
+        <dt>toujours</dt><dd>ne … jamais</dd>
+        <dt>encore</dt><dd>ne … plus</dd>
+        <dt>déjà</dt><dd>ne … pas encore</dd>
+        <dt>quelque chose</dt><dd>ne … rien</dd>
+        <dt>quelqu'un</dt><dd>ne … personne</dd>
+        <dt>partout</dt><dd>ne … nulle part</dd>
+        <dt>tous / toutes</dt><dd>aucun(e) … ne</dd>
+      </dl>
+    </div>
+    <div>
+      <h4>Connecteurs</h4>
+      <ul>
+        <li><b>Cause</b> : parce que, car, comme, à cause de (−), grâce à (+)</li>
+        <li><b>Conséquence</b> : donc, alors, c'est pourquoi, du coup</li>
+        <li><b>But</b> : pour, afin de + inf.</li>
+        <li><b>Opposition</b> : mais, cependant, malgré + nom, même si, bien que + subjonctif</li>
+        <li><b>Obligation</b> : devoir, il faut, être obligé de, avoir besoin de</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="sec"><h2>Section 4 · Vocabulaire</h2><p>Les thèmes du cours</p></div>
+
+<div class="card q">
+  <h3><span class="n">11.</span> Démarches, banque, santé, médias</h3>
+  <div class="two">
+    <div><h4>Démarches et banque</h4><dl>
+      <dt>une pièce d'identité</dt><dd>ID document</dd>
+      <dt>un justificatif de domicile</dt><dd>proof of address</dd>
+      <dt>un bail / une quittance de loyer</dt><dd>lease / rent receipt</dd>
+      <dt>une fiche de salaire</dt><dd>payslip</dd>
+      <dt>remplir un formulaire</dt><dd>fill in a form</dd>
+      <dt>un courrier recommandé</dt><dd>registered letter</dd>
+      <dt>le solde, le relevé</dt><dd>balance, statement</dd>
+      <dt>souscrire un abonnement</dt><dd>take out a subscription</dd>
+      <dt>un forfait</dt><dd>phone plan</dd>
+      <dt>une réclamation</dt><dd>complaint</dd>
+    </dl></div>
+    <div><h4>Santé, médias, objets</h4><dl>
+      <dt>avoir mal à la gorge</dt><dd>sore throat</dd>
+      <dt>être enrhumé, la toux</dt><dd>have a cold, cough</dd>
+      <dt>une ordonnance</dt><dd>prescription</dd>
+      <dt>un comprimé, un sirop</dt><dd>tablet, syrup</dd>
+      <dt>se blesser, guérir</dt><dd>get hurt, recover</dd>
+      <dt>un auditeur, un épisode</dt><dd>listener, episode</dd>
+      <dt>un internaute, les infox</dt><dd>internet user, fake news</dd>
+      <dt>il sert à…</dt><dd>it's used for…</dd>
+      <dt>en bois / plastique / métal</dt><dd>made of wood / plastic / metal</dd>
+      <dt>lourd ≠ léger, l'autonomie</dt><dd>heavy ≠ light, battery life</dd>
+    </dl></div>
+  </div>
+</div>
+
+<div class="sec"><h2>Section 5 · Compréhension et production</h2><p>Stratégies et modèle de texte</p></div>
+
+<div class="card q">
+  <h3><span class="n">12.</span> Compréhension orale et écrite</h3>
+  <ul>
+    <li>Lire toutes les questions <b>avant</b> l'audio et repérer le mot-question (où, quand, combien, qui, pourquoi).</li>
+    <li>Noter tout de suite les chiffres et les noms (9h10, 20 CHF, voie 5).</li>
+    <li>Dans un texte, la question utilise souvent un synonyme du texte.</li>
+    <li>Un article qui rapporte des faits et des citations est en général <b>neutre</b>.</li>
+    <li>Ne jamais laisser de réponse vide.</li>
+  </ul>
+</div>
+
+<div class="card q">
+  <h3><span class="n">13.</span> Production écrite : 80 à 100 mots</h3>
+  <div class="two">
+    <div>
+      <h4>Le plan</h4>
+      <ul>
+        <li><b>Salut [prénom],</b> / <b>Madame, Monsieur,</b></li>
+        <li>Pourquoi tu écris (1 phrase)</li>
+        <li><b>Tout d'abord</b>, conseil 1 + parce que…</li>
+        <li><b>Ensuite</b>, conseil 2 + afin de…</li>
+        <li><b>Enfin</b>, conseil 3 ou alternative</li>
+        <li><b>À bientôt, / Bisous,</b> + prénom</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Donner un conseil (varier)</h4>
+      <ul>
+        <li>Tu devrais / Tu ne devrais pas + inf.</li>
+        <li>Tu ferais mieux de + inf.</li>
+        <li>À ta place, je + conditionnel</li>
+        <li>Si j'étais toi, je + conditionnel</li>
+        <li>Je te conseille de + inf.</li>
+        <li>Il faudrait / Tu pourrais + inf.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note"><b>À vérifier :</b> au moins 3 formules de conseil différentes, un conditionnel, des connecteurs, et compter les mots.</p>
+</div>
+
+<div class="card q">
+  <h3><span class="n">14.</span> Modèle : un ami veut améliorer son français</h3>
+  <div class="model">Salut Marco,
+
+Merci pour ton message ! Tu veux améliorer ton français, c'est une très bonne idée. Tout d'abord, tu devrais regarder des séries françaises, parce que c'est le meilleur moyen d'entendre la langue de tous les jours. Ensuite, à ta place, je m'inscrirais à un cours du soir afin de pratiquer avec d'autres personnes. Si tu n'as pas le temps, tu pourrais écouter des podcasts dans le bus. Enfin, je te conseille de parler français avec tes collègues, même si c'est difficile au début. Tu verras, tu feras vite des progrès !
+
+À bientôt,
+[ton prénom]</div>
+</div>
+
+<p class="foot">Fiche de révision personnelle · Bonne chance !</p>
+</div>
+</body>
+</html>
